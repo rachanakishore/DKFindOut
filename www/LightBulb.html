@@ -28,15 +28,14 @@
     <meta name="fragment" content="!" />
     <link rel="stylesheet" href="css/app.css" />
     <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/094e6af0-1d7b-46ca-908f-755ab013599d.css" />
-    <script type="text/javascript" async="" src="http://www.google-analytics.com/plugins/ua/linkid.js"></script>
+    <!--<script type="text/javascript" async="" src="http://www.google-analytics.com/plugins/ua/linkid.js"></script>-->
     <script type="text/javascript" async="" src="http://www.google-analytics.com/analytics.js"></script>
-    <script src="https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en_GB.RZK6ti0DSm8.O/m=client/rt=j/sv=1/d=1/ed=1/am=AQ/rs=AGLTcCOonz9rCfVyMlkE5mnINKXN8udYjg/t=zcms/cb=gapi.loaded_0" async=""></script>
+    <!--<script src="https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en_GB.RZK6ti0DSm8.O/m=client/rt=j/sv=1/d=1/ed=1/am=AQ/rs=AGLTcCOonz9rCfVyMlkE5mnINKXN8udYjg/t=zcms/cb=gapi.loaded_0" async=""></script>-->
     <script type="text/javascript" async="" src="https://apis.google.com/js/client.js?onload=__gigya_handleClientLoad" gapi_processed="true"></script>
-    <script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-TFNPDC"></script>
-    <script src="environment.js"></script>
+    
     <script src="js/content.js"></script>
-    <script src="js/vendor.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.0.6/jquery.mousewheel.min.js"></script>
+    <!--<script src="js/vendor.js"></script>-->
+    <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.0.6/jquery.mousewheel.min.js"></script>-->
     <script type="text/javascript" src="js/app.js"></script>
     <meta name="google-site-verification" content="Lhd4vYdokS-_CfMFsYQuFrFIYNRELSnwGTJYEQm6Wu0" />
     <meta name="msvalidate.01" content="1F8F4C800DDB73CBC6A6EFA2057DCB0E" />
@@ -107,7 +106,8 @@
     </noscript>
     <script>
         // Container for preview
-        if (previewApplication || stagingApplication) {
+        var stagingApplication = false;
+        if (stagingApplication) {
             (function (w, d, s, l, i) {
                 w[l] = w[l] || []; w[l].push({ 'gtm.start':
         new Date().getTime(), event: 'gtm.js'
@@ -117,15 +117,15 @@
             })(window, document, 'script', 'dataLayer', 'GTM-5D9L7K');
         }
         // Container for www
-        if (!devApplication && !previewApplication && !stagingApplication) {
-            (function (w, d, s, l, i) {
-                w[l] = w[l] || []; w[l].push({ 'gtm.start':
-        new Date().getTime(), event: 'gtm.js'
-                }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-        '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-            })(window, document, 'script', 'dataLayer', 'GTM-TFNPDC');
-        }
+//        if (!devApplication && !previewApplication && !stagingApplication) {
+//            (function (w, d, s, l, i) {
+//                w[l] = w[l] || []; w[l].push({ 'gtm.start':
+//        new Date().getTime(), event: 'gtm.js'
+//                }); var f = d.getElementsByTagName(s)[0],
+//        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+//        '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+//            })(window, document, 'script', 'dataLayer', 'GTM-TFNPDC');
+//        }
     </script>
     <!-- End Google Tag Manager -->
     <!-- Gigya live -->
@@ -133,9 +133,9 @@
         {siteName: 'dkfindout.com',enabledProviders: 'facebook,twitter,google,linkedin'}
         </script>-->
     <!-- Gigya dev -->
-    <script type="text/javascript" src="http://cdn.gigya.com/js/gigya.js?apiKey=3_DAxc81LnnxH8ni70ChZbSet65IQRtfd-EYdDaDbnvbNM02huKNbBrZOWDARyzvqb">
+   <!-- <script type="text/javascript" src="http://cdn.gigya.com/js/gigya.js?apiKey=3_DAxc81LnnxH8ni70ChZbSet65IQRtfd-EYdDaDbnvbNM02huKNbBrZOWDARyzvqb">
         {siteName: 'dev.dkfindout.com',enabledProviders: 'facebook,twitter,google,linkedin'}
-    </script>
+    </script>-->
 
     <nav role="navigation" tabindex="0" id="header_view" class="component view" style="">
         <div class="topNav logoHidden">
@@ -233,7 +233,7 @@
                     </span>
                     <article class="annotation annos-3 hasCaption hasLeader noBeak noURL  Article">
                         <button class="label openCaption  left" style="left: 70.87%; top: 29.2%;" data-left="70.87" data-top="29.2" data-align="left" data-pid="PAL_70017960_oe2pw8" data-type="article" role="button" aria-label="Filament" aria-controls="caption-filament" onclick="clickFn('caption-filament');">
-                            <span class="annoThumb" style="background-image: url(mages/PAL_70017960_oe2pw8.png);" />
+                            <span class="annoThumb" style="background-image: url(img/PAL_70017960_oe2pw8.png);" />
                             <h3>
                                 Filament<span class="beak" />
                             </h3>
@@ -346,6 +346,7 @@
             </div>
         </div>
     </footer>-->
+    
     <iframe name="oauth2relay487199066" id="oauth2relay487199066" src="" tabindex="-1" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe>
 </body>
 </html>
